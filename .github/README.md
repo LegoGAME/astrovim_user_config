@@ -32,13 +32,13 @@ You can also just clone this repository directly if you do not want to track you
 #### Clone the repository Unix
 
 ```shell
-git clone https://github.com/LegoGAME/astrovim_user_example ~/.config/nvim/lua/user
+git clone https://github.com/LegoGAME/astrovim_user_config ~/.config/nvim/lua/user
 ```
 
 #### Clone the repository Windows
 
 ```shell
-git clone https://github.com/LegoGAME/astrovim_user_example $env:LOCALAPPDATA\nvim\lua\user
+git clone https://github.com/LegoGAME/astrovim_user_config $env:LOCALAPPDATA\nvim\lua\user
 ```
 
 #### Start Neovim
