@@ -11,10 +11,9 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr)
-          require("astronvim.utils.buffer").close(
-            bufnr)
-        end)
+        require("astronvim.utils.status").heirline.buffer_picker(
+          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        )
       end,
       desc = "Pick to close",
     },
@@ -26,9 +25,19 @@ return {
 
     -- кастомные маппинги
     -- ["<leader>a"] = { "<cmd>echo 'Hello!'<cr>", desc = "Say hello" }
+
+    -- перемещение строк вверх/вниз
+    ["<A-j>"] = { ":m+ <cr>", desc = "Переместить строку вниз" },
+    ["<A-k>"] = { ":m-2 <cr>", desc = "Переместить строку вверх" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  v = {
+    -- setting a mapping to false will disable it
+    -- ["<esc>"] = false,
+    ["<A-j>"] = { ":m '>+1<cr>gv=gv", desc = "Переместить строку вниз" },
+    ["<A-k>"] = { ":m '<-2<cr>gv=gv", desc = "Переместить строку вверх" },
   },
 }
