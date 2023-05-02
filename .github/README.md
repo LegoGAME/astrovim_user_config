@@ -40,3 +40,8 @@ git clone https://github.com/LegoGAME/astrovim_user_config $env:LOCALAPPDATA\nvi
 ```shell
 nvim
 ```
+
+#### Remove config
+```shelll
+rm -rf ~/.config/nvim/ && rm -rf ~/.cache/nvim && rm -rf ~/.local/share/nvim && rm -rf ~/.local/state/nvim
+```
