@@ -14,13 +14,13 @@ mv ~/.local/share/nvim ~/.local/share/nvim.bak
 #### Clone AstroNvim Unix
 
 ```shell
-git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 ```
 
 #### Clone AstroNvim Windows
 
 ```shell
-git clone https://github.com/AstroNvim/AstroNvim $env:LOCALAPPDATA\nvim
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim $env:LOCALAPPDATA\nvim
 ```
 
 #### Clone the repository Unix
